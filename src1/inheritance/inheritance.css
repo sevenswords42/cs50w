@@ -1,18 +1,22 @@
-.success, .warning, .error {
+.error, .warning, .success {
   font-family: sans-serif;
   font-size: 18px;
   font-weight: bold;
   border: 1px solid black;
   padding: 20px;
-  margin: 20px; }
+  margin: 20px;
+}
 
 .success {
-  background-color: green; }
+  background-color: green;
+}
 
 .warning {
-  background-color: orange; }
+  background-color: orange;
+}
 
 .error {
-  background-color: red; }
+  background-color: red;
+}
 
-sourceMappingURL=inheritance.css.map
+/*# sourceMappingURL=inheritance.css.map */
