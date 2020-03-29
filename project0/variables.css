@@ -1,0 +1,48 @@
+ul {
+  font-size: 18px;
+  color: blue; }
+
+ol {
+  font-size: 18px;
+  color: red; }
+a {
+    font-size: 20px;
+    color: red; }
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 30%;
+}
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+th {
+    background-color: lightgrey;
+}
+#top {
+    font-size: 36px;
+}
+#middle {
+    font-size: 24px;
+}
+#bottom {
+    font-size: 18px;
+}
+.position {
+    font-weight: bold;
+    background-color: green;
+    color: red;
+}
+@media (min-width: 500px) {
+    body {
+        background-color: yellow;
+    }
+}
+
+@media (max-width: 499px) {
+    body {
+        background-color: blue;
+    }
+}
