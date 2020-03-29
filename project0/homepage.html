@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Homepage</title>
+        <link rel="stylesheet" href="variables.css">
+        <style>
+            p::selection {
+                background-color: green;
+                color: red;
+            }
+            body > h3 {
+                color: green;
+            }
+            @media (min-width: 500px) {
+                body {
+                    background-color: yellow;
+                }
+                h1::before {
+                    content: "Hello, world! This is the front page!"
+                }
+            }
+            @media (max-width: 500px) {
+                body {
+                    background-color: blue;
+                }
+                h1::before {
+                    content: "Hello! Front page!"
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1></h1>
+        <h2>Table of Pages</h2>
+        <ul>
+            <li><a href="page1.html">Page 1!</a></li>
+            <li><a href="page2.html">Page 2!</a></li>
+            <li><a href="page3.html">Page 3!</a></li>
+        </ul>
+        <h2>Welcome image</h2>
+        <img src="cat.jpg" width="50%">
+        <p class="screen-only">
+            <h3>This information paragraph will disappear when you print this page:</h3>
+            The background and the photo of the cat will resize automatically when you adjust the size of the window.
+            At some point, the colour of the background will change.
+            <p>If you highlight this line, it will appear with different color and background.</p>
+        </p>
+    </body>
+</html>
