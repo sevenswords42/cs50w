@@ -1,0 +1,58 @@
+%std_font{
+  font-size: 20px;
+}
+.nesting {
+    ul {
+        a {
+            @extend %std_font;
+            color: lightgrey;
+        }
+        color: red;
+    }
+    ol {
+        a {
+            @extend %std_font;
+            color: lightgrey;
+        }
+        color: blue;
+    }
+}
+ul a::before {
+    content: "\21d2 Click here for: ";
+    font-weight: bold;
+}
+a:hover {
+    color: blue;
+}
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 30%;
+}
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+th {
+    background-color: lightgrey;
+}
+#top {
+    font-size: 36px;
+}
+#middle {
+    font-size: 28px;
+}
+#bottom {
+    @extend %std_font;
+}
+.position {
+    font-weight: bold;
+    background-color: green;
+    color: red;
+}
+@media print {
+    .screen-only {
+        display: none;
+    }
+}
