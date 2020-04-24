@@ -8,12 +8,18 @@
     Register Page
 {% endblock %}
 
+{% block header %}
+    <div class="header">
+        <form action="{{ url_for('registerpage') }}" method="post">
+            <input type="text" name="username" placeholder="Enter Username Here">
+            <input type="text" name="password" placeholder="Enter Password Here">
+            <button>Register</button>
+        </form>
+        {{ message }}
+    </div>
+{% endblock %}
+
 {% block body %}
-
-    <form action="{{ url_for('homepage') }}" method="post">
-        <input type="text" name="username" placeholder="Enter Username Here">
-        <input type="text" name="password" placeholder="Enter Password Here">
-        <button>Log In</button>
-    </form>
-
+    <a href="{{ url_for('login') }}"><button>Log In</button></a>
+    <a href="{{ url_for('frontpage') }}"><button>Front Page</button></a>
 {% endblock %}

@@ -9,11 +9,11 @@
 {% endblock %}
 
 {% block body %}
-
     <form action="{{ url_for('loginpage') }}" method="post">
         <input type="text" name="username" placeholder="Enter Username Here">
         <input type="text" name="password" placeholder="Enter Password Here">
         <button>Log In</button>
     </form>
-
+    <a href="{{ url_for('register') }}"><button>Register</button></a>
+    <a href="{{ url_for('frontpage') }}"><button>Front Page</button></a>
 {% endblock %}
